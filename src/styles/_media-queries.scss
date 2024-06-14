@@ -6,6 +6,15 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 686px) {
+  .link{
+    padding: 1rem;
+    &__paragraph{
+      display: none;
+    }
+  }
+
+}
 @media (max-width:644px) {
   .nav{
     &__items{

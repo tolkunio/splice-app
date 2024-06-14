@@ -7,6 +7,5 @@ $color-gray: #A6A8AD;
 
 @mixin flex-center{
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
