@@ -21,20 +21,22 @@ a {
   color: $color-white;
   text-decoration: none;
 }
+
 button{
   border: none;
   cursor: pointer;
 }
 
 .container {
+  padding: 1rem 1.5rem;
   max-width: 120rem;
   margin: 0 auto;
 }
 
 .header {
   @include flex-center;
+  column-gap: 2.3rem;
   justify-content: space-between;
-  padding: 2rem;
 
   &__buttons {
     @include flex-center;
@@ -84,6 +86,17 @@ button{
     width: 9.7rem;
     height: 3rem;
     object-fit: contain;
+  }
+  &__burgers{
+    display: none;
+
+    span{
+      display: inline-block;
+      width: 1.5rem;
+      height: 0.2rem;
+      background-color: $color-white;
+
+    }
   }
 }
 

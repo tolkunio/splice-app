@@ -28,6 +28,7 @@ button {
 }
 
 .container {
+  padding: 1rem 1.5rem;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -36,8 +37,8 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  column-gap: 2.3rem;
   justify-content: space-between;
-  padding: 2rem;
 }
 .header__buttons {
   display: flex;
@@ -87,6 +88,35 @@ button {
   width: 9.7rem;
   height: 3rem;
   object-fit: contain;
+}
+.nav__burgers {
+  display: none;
+}
+.nav__burgers span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 790px) {
+  .header {
+    justify-content: space-around;
+    height: auto;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 644px) {
+  .nav__items {
+    display: none;
+  }
+  .nav__burgers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

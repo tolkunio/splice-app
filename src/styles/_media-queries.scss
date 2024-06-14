@@ -1,0 +1,21 @@
+@media (max-width:790px) {
+  .header{
+    justify-content: space-around;
+    height: auto;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:644px) {
+  .nav{
+    &__items{
+      display: none;
+    }
+    &__burgers{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}
