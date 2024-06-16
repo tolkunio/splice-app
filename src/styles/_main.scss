@@ -166,9 +166,12 @@ button {
   }
 
   &__image {
+    max-width: 572px;
+
     img {
       max-width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: contain;
     }
   }
 
@@ -269,3 +272,75 @@ button {
     }
   }
 }
+
+.try {
+  @include flex-center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 120rem;
+  height: 72.8rem;
+  background: url("../assets/images/try.png") center/ cover no-repeat;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 5.4rem;
+    font-weight: 400;
+    line-height: 6rem;
+    text-align: center;
+  }
+}
+
+.footer {
+  padding: 5rem 0;
+
+  &__nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+  }
+
+  &__block--link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.1rem;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-gray;
+    transition: all 0.4s;
+
+    &:hover {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+
+  &__link_1 {
+    font-size: 2rem;
+    color: $color-white;
+    line-height: 2.4rem;
+  }
+
+  &__link--bt {
+    margin-bottom: 2.4rem;
+  }
+
+  &__nav--links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+
+  &__link--about {
+    font-size: 1.2rem;
+    color: $color-gray;
+  }
+}
+
