@@ -121,7 +121,8 @@ button {
     height: 100%;
   }
 }
-.producer{
+
+.producer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,26 +130,142 @@ button {
   padding-left: 5.4rem;
   max-width: 120rem;
   max-height: 74.4rem;
-  background:url("../assets/images/main-bg.png") center/ cover no-repeat;
+  background: url("../assets/images/main-bg.png") center/ cover no-repeat;
   margin: 0 auto;
-  &__title{
+
+  &__title {
     font-weight: 400;
     font-size: 7.2rem;
     line-height: 7.2rem;
     max-width: 41.6rem;
     margin-bottom: 2rem;
   }
-  &__descr{
+
+  &__descr {
     font-size: 2rem;
     max-width: 41.6rem;
     line-height: 2.4rem;
     margin-bottom: 4.4rem;
   }
-  &__link{
+
+  &__link {
     background-color: $color-blue;
     padding: 1.6rem 3.2rem;
     border-radius: 0.8rem;
     max-width: 12.8rem;
     margin-bottom: 20rem;
+  }
+}
+
+.sounds {
+  &__wrapper {
+    padding: 9.6rem 6.3rem 0 4.8rem;
+    @include flex-center;
+    flex-direction: row;
+    gap: 8.3rem;
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+.experience {
+  text-align: right;
+
+  &__wrapper {
+    @include flex-center;
+    flex-direction: row-reverse;
+    padding: 9.6rem 6.3rem 0 4.8rem;
+    gap: 8.3rem;
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: $color-gray;
+  padding-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  padding-bottom: 1.2rem;
+  color: $color-white;
+}
+
+.section-desc {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  padding-bottom: 2.3rem;
+}
+
+.section-btn {
+  background-color: $color-blue;
+  color: $color-white;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.reviews {
+  padding: 12rem 4.8rem;
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__wrapper {
+    @include flex-center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  &__card {
+    border-radius: 0.8rem;
+    padding: 3.2rem 3.2rem 3.2rem 4.4rem;
+    background-color: $color-white;
+    max-width: 36.1rem;
+    max-height: 45.3rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &__desc {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+      text-align: left;
+      color: $color-dark;
+    }
+
+    &__author {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      text-align: left;
+      color: $color-gray;
+
+    }
   }
 }
