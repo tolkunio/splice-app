@@ -1,5 +1,5 @@
 
-# Responsive layout - [Splice](https://tolkunio.github.io/balloon-tour/)
+# Responsive layout - [Splice](https://tolkunio.github.io/splice-app/)
 
 
 ## Overview
